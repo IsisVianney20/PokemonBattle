@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 344d78afb4e371841889f2b255c63e0c, type: 3}
+  m_Name: Attacks
+  m_EditorClassIdentifier: 
+  attacks:
+  - minDamge: 50
+    maxDamage: 100
+    attackTime: 2
+    animationName: KAttackONE
+    particlesPrefab: {fileID: 3280519133390621005, guid: a71be3e7990efb040a07565c43cbb198,
+      type: 3}
+  - minDamge: 30
+    maxDamage: 60
+    attackTime: 3
+    animationName: KAttackTWO
+    particlesPrefab: {fileID: 5824670795371433373, guid: f6fd568b816c64943a44efc3add3a881,
+      type: 3}

@@ -19,7 +19,7 @@ public class Attacks : ScriptableObject
 [System.Serializable]
 public class Attack
 {
-    public float minDamge;
+    public float minDamage;
     public float maxDamage;
     public float attackTime;
     public string animationName;

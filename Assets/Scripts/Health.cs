@@ -21,6 +21,8 @@ public class Health : MonoBehaviour
 
     private float _currentHeath;
 
+    public float CurrentHealth => _currentHeath;
+
     public void InitialHealth()
     {
         _currentHeath = _initialHealth;

@@ -13,15 +13,21 @@ MonoBehaviour:
   m_Name: Attacks
   m_EditorClassIdentifier: 
   attacks:
-  - minDamge: 50
+  - attackName: 
+    minDamage: 0
     maxDamage: 100
     attackTime: 2
     animationName: GAttackONE
-    particlesPrefab: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d,
+    soundName: Attack 1
+    hitParticlesPrefab: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d,
       type: 3}
-  - minDamge: 30
+    particlesPrefab: {fileID: 0}
+  - attackName: 
+    minDamage: 0
     maxDamage: 60
     attackTime: 3
     animationName: GAttackTWO
-    particlesPrefab: {fileID: 1206498299807332555, guid: af6c1e3f046eecd4d81330aeb285600f,
+    soundName: Attack 1
+    hitParticlesPrefab: {fileID: 1206498299807332555, guid: af6c1e3f046eecd4d81330aeb285600f,
       type: 3}
+    particlesPrefab: {fileID: 0}

@@ -23,6 +23,7 @@ public class BattleManager : MonoBehaviour
     private List<Fighter> _fighters = new List<Fighter>();
 
     private Coroutine _battleCoroutine;
+    private DamageTarget _damagetTarget = new DamageTarget();
 
     public void AddFighter(Fighter fighter)
     {
@@ -71,12 +72,18 @@ public class BattleManager : MonoBehaviour
                 defender = _fighters[Random.Range(0, _fighters.Count)];
             }
             attacker.transform.LookAt(defender.transform);
-            attacker.transform.LookAt(attacker.transform);
+            defender.transform.LookAt(attacker.transform);
             Attack attack = attacker.Attacks.GetRandomAttack();
             SoundManager.instance.Play(attack.soundName);
             attacker.CharacterAnimator.Play(attack.animationName);
+            GameObject attackParticles = Instantiate(attack.particlesPrefab, attacker.transform.position, Quaternion.identity); //nota
+            attackParticles.transform.SetParent(attacker.transform); //nota
             yield return new WaitForSeconds(attack.attackTime);
-            defender.Health.TakeDamage(Random.Range(attack.minDamage, attack.maxDamage));
+            float damage = Random.Range(attack.minDamage, attack.maxDamage);
+            GameObject defendParticles =Instantiate(attack.hitParticlesPrefab, defender.transform.position, Quaternion.identity); //nota
+            defendParticles.transform.SetParent(defender.transform); //nota
+            _damagetTarget.SetDamageTarget(damage, defender.transform);
+            defender.Health.TakeDamage(_damagetTarget);
             if (defender.Health.CurrentHealth <= 0)
             {
                 _fighters.Remove(defender);

@@ -17,7 +17,7 @@ public class Health : MonoBehaviour
     private UnityEvent _onDefeated;
 
     [SerializeField]
-    private UnityEvent _onTakeDamage;
+    private UnityEvent<DamageTarget> _onTakeDamage;
 
     private float _currentHeath;
 
@@ -34,17 +34,14 @@ public class Health : MonoBehaviour
         _onUpdateHealth?.Invoke(_currentHeath / _initialHealth);
     }
 
-    public void TakeDamage(float damage)
+    public void TakeDamage(DamageTarget damageTarget)
     {
-        _currentHeath -= damage;
+        _currentHeath -= damageTarget.damage;
+        _onTakeDamage?.Invoke(damageTarget);
         if (_currentHeath < 0)
         {
             _onDefeated?.Invoke();
             _currentHeath = 0;
-        }
-        else
-        {
-            _onTakeDamage?.Invoke();
         }
         UpdateHealth();
     }

@@ -19,10 +19,12 @@ public class Attacks : ScriptableObject
 [System.Serializable]
 public class Attack
 {
+    public string attackName; //nota
     public float minDamage;
     public float maxDamage;
     public float attackTime;
     public string animationName;
     public string soundName;
+    public GameObject hitParticlesPrefab; //nota
     public GameObject particlesPrefab;
 }

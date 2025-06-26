@@ -11,7 +11,7 @@ public class BattleManager : MonoBehaviour
 
     [SerializeField]
 
-    private UnityEvent _onFightersReady;
+    private UnityEvent _onBattleStopped;
 
     [SerializeField]
 
@@ -34,10 +34,14 @@ public class BattleManager : MonoBehaviour
     public void RemoveFighter(Fighter fighter)
     {
         _fighters.Remove(fighter);
-        if (_battleCoroutine != null)
+        if (_fighters.Count < 2)
         {
-            StopCoroutine(_battleCoroutine);
-            _battleCoroutine = null;
+            if (_battleCoroutine != null)
+            {
+                StopCoroutine(_battleCoroutine);
+                _battleCoroutine = null;
+            }
+            _onBattleStopped?.Invoke();
         }
     }
 
@@ -47,8 +51,7 @@ public class BattleManager : MonoBehaviour
         {
             return;
         }
-        _onFightersReady?.Invoke();
-        StartBattle();
+        _onBattleStarted.Invoke();
     }
 
     public void StartBattle()
@@ -62,7 +65,6 @@ public class BattleManager : MonoBehaviour
 
     private IEnumerator BattleCoroutine()
     {
-        _onBattleStarted?.Invoke();
         while (_fighters.Count > 1)
         {
             Fighter attacker = _fighters[Random.Range(0, _fighters.Count)];
@@ -76,12 +78,12 @@ public class BattleManager : MonoBehaviour
             Attack attack = attacker.Attacks.GetRandomAttack();
             SoundManager.instance.Play(attack.soundName);
             attacker.CharacterAnimator.Play(attack.animationName);
-            GameObject attackParticles = Instantiate(attack.particlesPrefab, attacker.transform.position, Quaternion.identity); //nota
-            attackParticles.transform.SetParent(attacker.transform); //nota
+            GameObject attackParticles = Instantiate(attack.particlesPrefab, attacker.transform.position, Quaternion.identity);
+            attackParticles.transform.SetParent(attacker.transform);
             yield return new WaitForSeconds(attack.attackTime);
             float damage = Random.Range(attack.minDamage, attack.maxDamage);
-            GameObject defendParticles =Instantiate(attack.hitParticlesPrefab, defender.transform.position, Quaternion.identity); //nota
-            defendParticles.transform.SetParent(defender.transform); //nota
+            GameObject defendParticles =Instantiate(attack.hitParticlesPrefab, defender.transform.position, Quaternion.identity);
+            defendParticles.transform.SetParent(defender.transform);
             _damagetTarget.SetDamageTarget(damage, defender.transform);
             defender.Health.TakeDamage(_damagetTarget);
             if (defender.Health.CurrentHealth <= 0)

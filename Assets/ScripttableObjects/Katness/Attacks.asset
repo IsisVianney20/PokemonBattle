@@ -19,15 +19,17 @@ MonoBehaviour:
     attackTime: 2
     animationName: KAttackONE
     soundName: Attack 2
-    hitParticlesPrefab: {fileID: 3280519133390621005, guid: a71be3e7990efb040a07565c43cbb198,
+    hitParticlesPrefab: {fileID: 1429954232896169633, guid: 83036083a4ebcd34f98131bd3cf6f4d2,
       type: 3}
-    particlesPrefab: {fileID: 0}
+    particlesPrefab: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55,
+      type: 3}
   - attackName: 
     minDamage: 0
     maxDamage: 60
     attackTime: 3
     animationName: KAttackTWO
     soundName: Attack 3
-    hitParticlesPrefab: {fileID: 1590415177872986601, guid: acdb90624a404aa438447006f1026065,
+    hitParticlesPrefab: {fileID: 8771972552311404799, guid: bbf9e36a48d6c5648a13889afab076fd,
       type: 3}
-    particlesPrefab: {fileID: 0}
+    particlesPrefab: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55,
+      type: 3}

@@ -19,15 +19,17 @@ MonoBehaviour:
     attackTime: 2
     animationName: GAttackONE
     soundName: Attack 1
-    hitParticlesPrefab: {fileID: 6294508013172393196, guid: 043176b6a68be2b43b073aaaa4782c7d,
+    hitParticlesPrefab: {fileID: 2504214343621411470, guid: 3ed0d324122d7b24eaec75c55c74aafc,
       type: 3}
-    particlesPrefab: {fileID: 0}
+    particlesPrefab: {fileID: 7177991128484655659, guid: 59a35ab9f68edff40b6e5332bed330f5,
+      type: 3}
   - attackName: 
     minDamage: 0
     maxDamage: 60
     attackTime: 3
     animationName: GAttackTWO
     soundName: Attack 1
-    hitParticlesPrefab: {fileID: 1206498299807332555, guid: af6c1e3f046eecd4d81330aeb285600f,
+    hitParticlesPrefab: {fileID: 3432958286849152088, guid: 87ee7299dd44ed747af24dbb91bcd33b,
       type: 3}
-    particlesPrefab: {fileID: 0}
+    particlesPrefab: {fileID: 7177991128484655659, guid: 59a35ab9f68edff40b6e5332bed330f5,
+      type: 3}

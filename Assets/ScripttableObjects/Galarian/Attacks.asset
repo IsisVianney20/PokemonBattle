@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Attacks
   m_EditorClassIdentifier: 
   attacks:
-  - attackName: 
-    minDamage: 0
+  - attackName: Firewall
+    minDamage: 15
     maxDamage: 100
     attackTime: 2
     animationName: GAttackONE
@@ -23,8 +23,8 @@ MonoBehaviour:
       type: 3}
     particlesPrefab: {fileID: 7177991128484655659, guid: 59a35ab9f68edff40b6e5332bed330f5,
       type: 3}
-  - attackName: 
-    minDamage: 0
+  - attackName: Impact Glowing
+    minDamage: 5
     maxDamage: 60
     attackTime: 3
     animationName: GAttackTWO

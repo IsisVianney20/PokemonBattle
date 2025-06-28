@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Attacks
   m_EditorClassIdentifier: 
   attacks:
-  - attackName: 
-    minDamage: 0
+  - attackName: Magic Poof
+    minDamage: 20
     maxDamage: 100
     attackTime: 2
     animationName: KAttackONE
@@ -23,9 +23,9 @@ MonoBehaviour:
       type: 3}
     particlesPrefab: {fileID: 9157105887711914197, guid: c4f829cb7dd4b864caf8832ec5b1ee55,
       type: 3}
-  - attackName: 
-    minDamage: 0
-    maxDamage: 60
+  - attackName: Falling Stars
+    minDamage: 10
+    maxDamage: 65
     attackTime: 3
     animationName: KAttackTWO
     soundName: Attack 3

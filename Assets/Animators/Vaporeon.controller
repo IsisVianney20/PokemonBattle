@@ -63,16 +63,16 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 5682189711806464069}
-    m_Position: {x: 290, y: 110, z: 0}
+    m_Position: {x: 280, y: 50, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -4258331949594936265}
-    m_Position: {x: 325, y: 175, z: 0}
+    m_Position: {x: 320, y: 120, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6520975648173422087}
-    m_Position: {x: 360, y: 240, z: 0}
+    m_Position: {x: 360, y: 180, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4039371277700148072}
-    m_Position: {x: 395, y: 305, z: 0}
+    m_Position: {x: 390, y: 250, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 2501763933466666525}
     m_Position: {x: 430, y: 370, z: 0}
@@ -85,7 +85,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 5682189711806464069}
+  m_DefaultState: {fileID: -4258331949594936265}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Armature|ArmatureAction
+  m_Name: Attack1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

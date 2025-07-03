@@ -1362,7 +1362,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Katress Cry
+          m_StringArgument: KatressCry
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1650408906}
@@ -2058,7 +2058,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Katress Cry
+          m_StringArgument: VaporeonCry
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1445822994}
@@ -2775,7 +2775,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Idle
           m_BoolArgument: 0
         m_CallState: 2
   _winAnimationName: Win
@@ -3136,32 +3136,32 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d6c1d647a6ea3b240930c1d2aca32ed9,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.049999997
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6c1d647a6ea3b240930c1d2aca32ed9,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.049999997
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6c1d647a6ea3b240930c1d2aca32ed9,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.049999997
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6c1d647a6ea3b240930c1d2aca32ed9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0077
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6c1d647a6ea3b240930c1d2aca32ed9,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0014
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6c1d647a6ea3b240930c1d2aca32ed9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.0158
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d6c1d647a6ea3b240930c1d2aca32ed9,
         type: 3}
@@ -3217,6 +3217,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.729293
+      objectReference: {fileID: 0}
+    - target: {fileID: -8440791036570069414, guid: d6c1d647a6ea3b240930c1d2aca32ed9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8440791036570069414, guid: d6c1d647a6ea3b240930c1d2aca32ed9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -6.13
       objectReference: {fileID: 0}
     - target: {fileID: -8374713531659753442, guid: d6c1d647a6ea3b240930c1d2aca32ed9,
         type: 3}
@@ -4850,32 +4860,32 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 44ad431f40da5af4e900abeb48414511,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.13
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44ad431f40da5af4e900abeb48414511,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.13
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44ad431f40da5af4e900abeb48414511,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.13
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44ad431f40da5af4e900abeb48414511,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0009999871
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44ad431f40da5af4e900abeb48414511,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0014
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44ad431f40da5af4e900abeb48414511,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.017
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 44ad431f40da5af4e900abeb48414511,
         type: 3}
@@ -7265,17 +7275,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 68beab80050d7d04bb788894ac334dcb,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68beab80050d7d04bb788894ac334dcb,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68beab80050d7d04bb788894ac334dcb,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 68beab80050d7d04bb788894ac334dcb,
         type: 3}
@@ -8022,9 +8032,9 @@ MonoBehaviour:
   _onBattleStopped:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2027355544}
-        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: StopMusic
+      - m_Target: {fileID: 1631391796}
+        m_TargetAssemblyTypeName: MessageFrame, Assembly-CSharp
+        m_MethodName: StopMesage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8034,9 +8044,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1631391796}
-        m_TargetAssemblyTypeName: MessageFrame, Assembly-CSharp
-        m_MethodName: StopMesage
+      - m_Target: {fileID: 2027355544}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: StopMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8066,20 +8076,20 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2027355544}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: StopMusic
-        m_Mode: 1
+        m_MethodName: Play
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: WinnSound
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 2027355544}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 5
+        m_MethodName: StopMusic
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
